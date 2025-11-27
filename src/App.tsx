@@ -18,6 +18,8 @@ import {
   Briefcase,
   Rocket,
   ExternalLink,
+  Github,
+  Linkedin,
 } from "lucide-react";
 
 export default function App() {
@@ -68,7 +70,7 @@ export default function App() {
       company: "Sandsoft",
       period: "2023 - 2024",
       description:
-        "Merge Rumble: Epic Real-Time PvP Strategy Game with merging mechanism.",
+        "Epic Real-Time PvP Strategy Game with merging mechanism.",
       tags: ["Unity", "Optimization", "SDKs"],
       link: "https://play.google.com/store/apps/details?id=com.quicksand.mergerumble&hl=en",
       image: "https://iili.io/fBZZM57.webp",
@@ -79,7 +81,7 @@ export default function App() {
       company: "UMXStudio",
       period: "2022 - 2023",
       description:
-        "Multiplayer racing game for iOS, Android, and Huawei platforms",
+        "Multiplayer racing and drifting game with wide range of cars",
       tags: ["Multiplayer", "Racing", "Cross-platform"],
       link: "https://play.google.com/store/apps/details?id=com.aliha100.KingofSteering&hl=en",
       image: "https://iili.io/fBZZ00l.webp",
@@ -89,7 +91,8 @@ export default function App() {
       title: "Climbing Sand Dune OFFROAD",
       company: "UMXStudio",
       period: "2022 - 2023",
-      description: "Racing game with with arabic theme",
+      description:
+        "Racing desert drifting game with with arabic theme",
       tags: ["Racing", "Mobile", "Multiplayer"],
       link: "https://play.google.com/store/apps/details?id=com.aliha100.climbingsanddune3d1&hl=en",
       image: "https://iili.io/fBZDn8N.webp",
@@ -99,7 +102,8 @@ export default function App() {
       title: "Perfect Store VR",
       company: "Union Coop",
       period: "2023",
-      description: "VR supermarket application for Quest",
+      description:
+        "VR supermarket application for Quest with actual experience of selecting items and ordering it to be delivered to your home",
       tags: ["VR", "Quest", "Unity"],
       link: "https://queststoredb.com/app/union-coop-6246938002023894/",
       image: "https://iili.io/fBtEqTG.png",
@@ -110,7 +114,7 @@ export default function App() {
       company: "Immergic (CGEVO)",
       period: "2019 - 2022",
       description:
-        "touch screen application for a showroom in the automotive industry",
+        "An interactive experience that redefines the way customers engage with the brand. With just a touch, users can navigate through a wide range of vehicles, view detailed specifications, and even customize their choices",
       tags: ["Automotive", "Unity"],
       link: "https://www.youtube.com/watch?v=ie62cWdp_i4",
       image:
@@ -122,7 +126,7 @@ export default function App() {
       company: "Immergic (CGEVO)",
       period: "2019 - 2022",
       description:
-        "Augmented reality application with realtime movement controls",
+        "Power of augmented reality with advanced robotics to create an interactive learning environment for the energy sector",
       tags: ["AR", "Mobile", "PC"],
       link: "https://www.youtube.com/watch?v=6SxWRtBhh74",
       image: "https://iili.io/fBZtHLG.png",
@@ -177,7 +181,7 @@ export default function App() {
     {
       title: "Smashable",
       description:
-        "Global Game Jam 2018 - Development, level design and visual effects",
+        "Global Game Jam 2018 - puzzle platformer fast paced game",
       tags: ["Game Jam", "Level Design"],
       link: "https://drive.google.com/file/d/14mWwrsoZpz3A7fo1NgY8vdqzI-o_OFKb/view",
       image: "https://iili.io/fBZtR2V.png",
@@ -186,7 +190,7 @@ export default function App() {
     {
       title: "Naughty Soul",
       description:
-        "Global Game Jam 2021 - Level design, core mechanics and sound design",
+        "Global Game Jam 2021 - soul collecting puzzle game",
       tags: ["Game Jam", "Sound Design"],
       link: "https://leckchess.itch.io/naughty-soul",
       image: "https://iili.io/fBZtNTX.png",
@@ -194,8 +198,7 @@ export default function App() {
     },
     {
       title: "Break it",
-      description:
-        "Global Game Jam 2020 - Game level design and development",
+      description: "Global Game Jam 2020 - memory game",
       tags: ["Game Jam", "Puzzle"],
       link: "https://drive.google.com/file/d/1HZH_hEFrn_t77eY7pbqsB3YHJ3xWOJun/view",
       image: "https://iili.io/fBZtLZu.png",
@@ -239,7 +242,7 @@ export default function App() {
     },
     {
       title: "Naho Puzzle Game",
-      description: "Game level design and development project",
+      description: "Kids puzzle game",
       tags: ["Puzzle", "Level Design"],
       link: "https://drive.google.com/file/d/1YOEDwcXawonNuYjjzNWd9sqlaoCzsAvm/view?usp=drive_link",
       image: "https://iili.io/fBZDx9I.png",
@@ -248,7 +251,7 @@ export default function App() {
     {
       title: "Poinky",
       description:
-        "ITI graduation project - Complete game development",
+        "ITI graduation project - endless runner game with unique enviroment controls mechanics",
       tags: ["Educational", "Graduation"],
       link: "https://youtu.be/Pz39W4Iy_xw",
       image:
@@ -427,29 +430,55 @@ export default function App() {
                   </motion.p>
 
                   <motion.div
-                    className="flex gap-4 justify-center lg:justify-start"
+                    className="flex flex-col gap-4"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.7 }}
                   >
-                    <button
-                      onClick={() =>
-                        setActiveSection("projects")
-                      }
-                      className="bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-cyan-500/50"
-                    >
-                      <Rocket className="w-5 h-5" />
-                      View Projects
-                    </button>
-                    <button
-                      onClick={() =>
-                        setActiveSection("contact")
-                      }
-                      className="bg-gray-800 border-2 border-cyan-400/50 px-8 py-4 rounded-lg hover:bg-gray-700 hover:scale-105 transition-all flex items-center gap-2"
-                    >
-                      <Mail className="w-5 h-5" />
-                      Get in Touch
-                    </button>
+                    <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
+                      <button
+                        onClick={() =>
+                          setActiveSection("projects")
+                        }
+                        className="bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-cyan-500/50"
+                      >
+                        <Rocket className="w-5 h-5" />
+                        View Projects
+                      </button>
+                      <button
+                        onClick={() =>
+                          setActiveSection("contact")
+                        }
+                        className="bg-gray-800 border-2 border-cyan-400/50 px-8 py-4 rounded-lg hover:bg-gray-700 hover:scale-105 transition-all flex items-center gap-2"
+                      >
+                        <Mail className="w-5 h-5" />
+                        Get in Touch
+                      </button>
+                    </div>
+
+                    {/* Social Links */}
+                    <div className="flex gap-4 justify-center lg:justify-start">
+                      <motion.a
+                        href="https://github.com/alo2a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-800 border-2 border-gray-600 p-4 rounded-lg hover:bg-gray-700 hover:border-cyan-400 hover:scale-110 transition-all"
+                        whileHover={{ y: -2 }}
+                        title="GitHub Profile"
+                      >
+                        <Github className="w-6 h-6 text-gray-300 hover:text-cyan-400 transition-colors" />
+                      </motion.a>
+                      <motion.a
+                        href="https://www.linkedin.com/in/alaa-hatata/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-800 border-2 border-gray-600 p-4 rounded-lg hover:bg-gray-700 hover:border-blue-400 hover:scale-110 transition-all"
+                        whileHover={{ y: -2 }}
+                        title="LinkedIn Profile"
+                      >
+                        <Linkedin className="w-6 h-6 text-gray-300 hover:text-blue-400 transition-colors" />
+                      </motion.a>
+                    </div>
                   </motion.div>
                 </div>
               </div>
@@ -804,7 +833,6 @@ export default function App() {
                       "Multiplayer",
                       "Performance Optimization",
                       "SDK Integration",
-                      "Multiplayer",
                       "Cross-platform",
                       "Team Leadership",
                       "Agile Development",
