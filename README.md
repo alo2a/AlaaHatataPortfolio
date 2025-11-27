@@ -1,7 +1,7 @@
 
-  # Game Developer Portfolio (Community)
+  # Alaa Hatata Portfolio
 
-  This is a code bundle for Game Developer Portfolio (Community). The original project is available at https://www.figma.com/design/sCtfeKzf3tXSYRYhNFT65P/Game-Developer-Portfolio--Community-.
+  This is a code bundle for Alaa Hatata Portfolio. The original project is available at https://www.figma.com/design/sCtfeKzf3tXSYRYhNFT65P/Alaa-Hatata-Portfolio.
 
   ## Running the code
 
